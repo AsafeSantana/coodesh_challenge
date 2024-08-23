@@ -48,7 +48,7 @@ This is a challenge by Coodesh
 - **destroy($code):** Move um produto para o status "trash". Retorna sucesso ou erro.
 
 ## ImportFoodFacts
-Responsável por importar, baixar e processar dados dos produtos. Atualiza ou cria produtos no banco de dados.
+Responsável por importar, baixar e processar dados vindos do Open Food. Atualiza ou cria esses produtos no banco de dados.
 
 ## Endpoints
 
