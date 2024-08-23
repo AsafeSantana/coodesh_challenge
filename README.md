@@ -12,7 +12,7 @@ Projeto para gerenciamento de produtos com uma API RESTful, incluindo funcionali
 
 1. **Clone o Repositório:**
     ```bash
-    git clone https://github.com/usuario/repo.git
+    git clone https://github.com/AsafeSantana/coodesh_challenge
     ```
 
 2. **Instale as Dependências:**
