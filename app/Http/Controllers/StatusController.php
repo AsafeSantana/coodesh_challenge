@@ -10,16 +10,12 @@ class StatusController extends Controller
 {
     public function status()
     {
-        // Checar a conexão com o banco de dados
         $dbStatus = $this->checkDatabaseConnection();
 
-        // Horário da última execução do CRON
         $lastCronRun = $this->getLastCronRunTime();
 
-        // Tempo online
         $uptime = $this->getUptime();
 
-        // Uso de memória
         $memoryUsage = $this->getMemoryUsage();
 
         return response()->json([
@@ -42,7 +38,7 @@ class StatusController extends Controller
 
     private function getLastCronRunTime()
     {
-        
+
         return Cache::get('last_cron_run', 'Unknown');
     }
 

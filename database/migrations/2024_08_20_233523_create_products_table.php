@@ -15,7 +15,7 @@ return new class extends Migration
         $table->id();
         $table->integer('code')->unique();
         $table->enum('status', ['draft', 'trash', 'published'])->default('draft');
-        $table->timestamp('imported_t')->nullable(); // Alterado para 'date'
+        $table->timestamp('imported_t')->nullable(); 
         $table->string('url')->nullable();
         $table->string('creator')->nullable();
         $table->timestamp('created_t')->nullable();
